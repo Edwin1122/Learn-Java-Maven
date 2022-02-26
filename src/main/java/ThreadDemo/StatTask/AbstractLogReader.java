@@ -1,6 +1,6 @@
 package ThreadDemo.StatTask;
 
-import cc.openhome.ThreadDemo.Util.Tools;
+import ThreadDemo.Util.Tools;
 
 import java.io.BufferedReader;
 import java.io.IOException;

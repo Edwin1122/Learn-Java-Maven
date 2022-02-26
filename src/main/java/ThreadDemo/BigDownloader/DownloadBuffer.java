@@ -1,6 +1,6 @@
 package ThreadDemo.BigDownloader;
 
-import cc.openhome.ThreadDemo.Util.Debug;
+import ThreadDemo.Util.Debug;
 
 import java.io.Closeable;
 import java.io.IOException;

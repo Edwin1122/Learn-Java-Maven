@@ -1,8 +1,8 @@
 package ThreadDemo.AlarmAgent;
 
 
-import cc.openhome.ThreadDemo.Util.Debug;
-import cc.openhome.ThreadDemo.Util.Tools;
+import ThreadDemo.Util.Debug;
+import ThreadDemo.Util.Tools;
 
 import java.util.Random;
 

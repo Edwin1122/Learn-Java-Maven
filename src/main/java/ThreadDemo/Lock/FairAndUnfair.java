@@ -24,7 +24,8 @@ public class FairAndUnfair {
     }
 
     private void testLock(Lock lock) {
-        System.out.println("entered");
+//        System.out.println("entered");
+
         start = new CountDownLatch(1);
         for (int i = 0; i < 5; i++) {
             Thread thread = new Job(lock);
@@ -46,6 +47,7 @@ public class FairAndUnfair {
             try {
                 start.await();
             } catch (InterruptedException e) {
+                e.printStackTrace();
             }
             for (int i = 0; i < 2; i++) {
                 lock.lock();
@@ -63,6 +65,7 @@ public class FairAndUnfair {
     }
 
     private static class ReentrantLock2 extends ReentrantLock {
+
         private static final long serialVersionUID = -6736727496956351588L;
 
         public ReentrantLock2(boolean fair) {

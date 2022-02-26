@@ -1,6 +1,6 @@
 package ThreadDemo.Util.stf;
 
-import cc.openhome.ThreadDemo.Util.Tools;
+import ThreadDemo.Util.Tools;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

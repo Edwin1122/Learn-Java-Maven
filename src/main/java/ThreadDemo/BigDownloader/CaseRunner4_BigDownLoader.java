@@ -1,6 +1,6 @@
 package ThreadDemo.BigDownloader;
 
-import cc.openhome.ThreadDemo.Util.Debug;
+import ThreadDemo.Util.Debug;
 
 public class CaseRunner4_BigDownLoader {
 

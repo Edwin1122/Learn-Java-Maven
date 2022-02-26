@@ -1,6 +1,6 @@
 package ThreadDemo.StatTask;
 
-import cc.openhome.ThreadDemo.Util.AppWrapper;
+import ThreadDemo.Util.AppWrapper;
 
 import java.io.*;
 import java.lang.reflect.Constructor;
@@ -49,7 +49,7 @@ public class CaseRunner4StatTask {
                                        String expectedExternalDeviceList) throws Exception {
         String taskClazz = System.getProperty("x.stat.task");
 
-        taskClazz = null == taskClazz ? "cc.openhome.ThreadDemo.StatTask.MultithreadedStatTask" : taskClazz;
+        taskClazz = null == taskClazz ? "ThreadDemo.StatTask.MultithreadedStatTask" : taskClazz;
 
         //这种动态传递类并且实例化的方式可以进一步学习了解下.
         Class<?> clazz = Class.forName(taskClazz);

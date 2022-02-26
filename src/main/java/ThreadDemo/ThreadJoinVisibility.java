@@ -1,6 +1,6 @@
 package ThreadDemo;
 
-import cc.openhome.ThreadDemo.Util.Tools;
+import ThreadDemo.Util.Tools;
 
 public class ThreadJoinVisibility {
     // 线程间的共享变量

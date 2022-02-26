@@ -1,6 +1,6 @@
 package ThreadDemo;
 
-import cc.openhome.ThreadDemo.Util.Tools;
+import ThreadDemo.Util.Tools;
 
 public class RaceConditionDemo {
     public static void main(String [] args) throws Exception {

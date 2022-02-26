@@ -1,6 +1,6 @@
 package ThreadDemo;
 
-import cc.openhome.ThreadDemo.Util.Debug;
+import ThreadDemo.Util.Debug;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -73,7 +73,7 @@ class FileDownloader implements Runnable {
                 buf.clear();
             }
         } finally {
-            cc.openhome.ThreadDemo.Util.Tools.silentClose(inChannel, outChannel);
+            ThreadDemo.Util.Tools.silentClose(inChannel, outChannel);
             httpConn.disconnect();
         }
     }// downloadFile ends

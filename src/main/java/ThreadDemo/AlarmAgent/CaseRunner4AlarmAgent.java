@@ -1,6 +1,6 @@
 package ThreadDemo.AlarmAgent;
 
-import cc.openhome.ThreadDemo.Util.Tools;
+import ThreadDemo.Util.Tools;
 
 public class CaseRunner4AlarmAgent {
     final static AlarmAgent alarmAgent;
