@@ -49,6 +49,8 @@ public class FairAndUnfair {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
+
             for (int i = 0; i < 2; i++) {
                 lock.lock();
                 try {
@@ -57,6 +59,7 @@ public class FairAndUnfair {
                     lock.unlock();
                 }
             }
+
         }
 
         public String toString() {
