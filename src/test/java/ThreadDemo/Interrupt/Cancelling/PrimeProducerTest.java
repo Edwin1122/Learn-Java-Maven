@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.math.BigInteger;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 
@@ -16,7 +17,7 @@ class PrimeProducerTest {
 
     @Test
     void testPrimeProducer() throws InterruptedException {
-        BlockingQueue<BigInteger> queue = null;
+        BlockingQueue<BigInteger> queue = new ArrayBlockingQueue<BigInteger>(1024);;
 
         PrimeProducer primeProducer = new PrimeProducer(queue);
         primeProducer.start();
