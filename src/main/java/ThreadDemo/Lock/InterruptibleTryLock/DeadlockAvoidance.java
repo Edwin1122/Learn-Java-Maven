@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 
 import static java.util.concurrent.TimeUnit.NANOSECONDS;
+import static java.util.concurrent.TimeUnit.SECONDS;
 
 /**
  * DeadlockAvoidance
@@ -48,8 +49,8 @@ public class DeadlockAvoidance {
                     fromAcct.lock.unlock();
                 }
             }
-            if (System.nanoTime() < stopTime)
-                return false;
+
+            if (System.nanoTime() < stopTime) return false;
             NANOSECONDS.sleep(fixedDelay + rnd.nextLong() % randMod);
         }
     }
@@ -74,28 +75,18 @@ public class DeadlockAvoidance {
         }
     }
 
-    class Account {
-        public Lock lock;
-
-        //取钱
-        void debit(DollarAmount d) {
-        }
-
-        //存钱
-        void credit(DollarAmount d) {
-        }
-
-        DollarAmount getBalance() {
-            return null;
-        }
-    }
 
     class InsufficientFundsException extends Exception {
     }
 
-    public static void main(String[] args) {
-        DeadlockAvoidance deadlockAvoidance = new DeadlockAvoidance();
 
+
+    public static void main(String[] args) throws InsufficientFundsException, InterruptedException {
+        DeadlockAvoidance deadlockAvoidance = new DeadlockAvoidance();
+        Account fromAcc = new Account();
+        Account toAcc = new Account();
+
+        deadlockAvoidance.transferMoney(fromAcc, toAcc, new DollarAmount(10), 10, SECONDS);
     }
 }
 
