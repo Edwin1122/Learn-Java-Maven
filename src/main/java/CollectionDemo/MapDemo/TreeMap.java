@@ -1,4 +1,4 @@
-package LearnMapDemo;
+package CollectionDemo.MapDemo;
 
 import java.util.Map;
 
