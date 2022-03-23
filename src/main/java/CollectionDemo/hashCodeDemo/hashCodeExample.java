@@ -78,7 +78,8 @@ class GFG
                 System.out.println("Both Objects are not equal. ");
 
         }
-        else
+        else {
             System.out.println("Both Objects are not equal. ");
+        }
     }
 }
