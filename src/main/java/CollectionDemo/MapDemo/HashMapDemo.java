@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import static java.lang.System.out;
 
-public class HashMap {
+public class HashMapDemo {
     public static void main(String[] args) {
         Map<String, String> messages = new java.util.HashMap<>();
         messages.put("Justin", "Hello! Justin");
