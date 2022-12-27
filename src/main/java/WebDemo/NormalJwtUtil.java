@@ -19,6 +19,7 @@ import java.util.Map;
 public class NormalJwtUtil {
 
     /**
+     * <a href="https://github.com/yulc-coding/java-note/blob/master/jwt/src/main/java/org/ylc/note/jwt/NormalJwtUtil.java">...</a>
      * 签名秘钥
      */
     private static final String SECRET = "!@#$%YLC*&^%()95622SSxx";
