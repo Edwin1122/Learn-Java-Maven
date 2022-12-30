@@ -7,6 +7,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.UUID;
 
+//JJWT 版本，使用HS256加密, JJWT实现了JWT, JWS, JWE 和 JWA RFC规范；
+//https://zhuanlan.zhihu.com/p/443618267
 public class JwtUtil {
 
     //salt，一段加密的字符，这一串东西不能给别人知道不然就不安全了，只有设计者知道

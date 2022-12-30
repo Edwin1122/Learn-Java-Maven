@@ -13,16 +13,16 @@ class NormalJwtUtilTest {
         subjectJson.put("userId", 8888);
         subjectJson.put("name", "ylc");
 
-        String token = NormalJwtUtil.createToken(subjectJson);
+        String token = Auth0JwtUtil.createToken(subjectJson);
         System.out.println("token:" + token);
         System.out.println("===================");
 
-        System.out.println("Verify result: " + NormalJwtUtil.verifyToken(token));
+        System.out.println("Verify result: " + Auth0JwtUtil.verifyToken(token));
         System.out.println("===================");
 
 
         System.out.println("Decode info: ");
-        NormalJwtUtil.decodeToken(token);
+        Auth0JwtUtil.decodeToken(token);
 
     }
 }

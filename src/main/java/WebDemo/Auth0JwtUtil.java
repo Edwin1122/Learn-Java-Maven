@@ -16,10 +16,11 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Map;
 
-public class NormalJwtUtil {
+//https://juejin.cn/post/6844904007127793678
+// https://github.com/yulc-coding/java-note/tree/master/jwt/src/main/java/org/ylc/note/jwt 这里面还有AES加密版的，此例子为HS256版的
+public class Auth0JwtUtil {
 
     /**
-     * <a href="https://github.com/yulc-coding/java-note/blob/master/jwt/src/main/java/org/ylc/note/jwt/NormalJwtUtil.java">...</a>
      * 签名秘钥
      */
     private static final String SECRET = "!@#$%YLC*&^%()95622SSxx";
