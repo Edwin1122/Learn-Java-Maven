@@ -21,10 +21,10 @@ public class DeserializationUtility {
     public static Object deSerializeObjectFromString(String s)
             throws IOException, ClassNotFoundException {
 
-        //先把数据存到字节数组里
+        //先把String数据存到字节数组data里
         byte[] data = Base64.getDecoder().decode(s);
 
-        //再用字节数组流读取到对象流ObjectInputStream
+        //再用字节数组流读取字节数组data， 然后再到对象流ObjectInputStream
         ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(data));
 
         //对象流里读取对象

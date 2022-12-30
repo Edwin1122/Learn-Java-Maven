@@ -20,16 +20,17 @@ public class SerializationUtility {
     }
 
     public static String serializeObjectToString(Serializable o) throws IOException {
-        //对象输出流继续输出到字节数组流中
+        //创建字节数组流
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
 
+        //再根据字节流对象创建对象流
         ObjectOutputStream oos = new ObjectOutputStream(baos);
 
         //把对象写进对象输出流oos里
         oos.writeObject(o);
         oos.close();
 
-        // 字节数组最终保存为String
+        // 字节数组最终转化为String
         return Base64.getEncoder().encodeToString(
                 //字节数组流最终存为字节数组
                 baos.toByteArray()
