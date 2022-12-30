@@ -37,4 +37,8 @@ public class SerializationUtility {
                 baos.toByteArray()
         );
     }
+
+    public static void StringBytesConvertion() {
+        byte[] bytes = "abcde".getBytes();
+    }
 }
