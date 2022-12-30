@@ -19,6 +19,7 @@ public class SerializationUtility {
         System.out.println(serializedObj);
     }
 
+    //Object -> ObjectOutputStream -> ByteArrayOutputStream -> byte[] -> String
     public static String serializeObjectToString(Serializable o) throws IOException {
         //创建字节数组流
         ByteArrayOutputStream baos = new ByteArrayOutputStream();

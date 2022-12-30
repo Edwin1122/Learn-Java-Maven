@@ -18,6 +18,7 @@ public class DeserializationUtility {
         System.out.println("Thunderbolt port of AppleProduct:" + deserializedObj.getThunderboltPort());
     }
 
+    //String -> byte[] -> ByteArrayInputStream -> ObjectInputStream -> readObject -> Object
     public static Object deSerializeObjectFromString(String s)
             throws IOException, ClassNotFoundException {
 
