@@ -45,6 +45,12 @@
             <version>2.0.24</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.auth0/jwks-rsa -->
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>jwks-rsa</artifactId>
+            <version>0.21.2</version>
+        </dependency>
         <!--  auth0 jwt lib  -->
         <dependency>
             <groupId>com.auth0</groupId>
@@ -56,11 +62,16 @@
             <artifactId>hutool-all</artifactId>
             <version>5.8.10</version>
         </dependency>
-
+        <!--jjwt lib-->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.11</version>
         </dependency>
     </dependencies>
 
