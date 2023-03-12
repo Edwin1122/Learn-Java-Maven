@@ -11,7 +11,7 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 
 
 public class PrimeGenerator implements Runnable {
-    private static ExecutorService exec = Executors.newCachedThreadPool();
+    private static final ExecutorService executor = Executors.newCachedThreadPool();
     private final List<BigInteger> primes = new ArrayList<BigInteger>();
 
     private volatile boolean cancelled;//要线程安全
@@ -37,7 +37,7 @@ public class PrimeGenerator implements Runnable {
 
     static List<BigInteger> aSecondOfPrimes() throws InterruptedException {
         PrimeGenerator generator = new PrimeGenerator();
-        exec.execute(generator);
+        executor.execute(generator);
 
         try {
 //            SECONDS.sleep(1);
