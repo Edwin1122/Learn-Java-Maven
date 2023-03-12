@@ -31,6 +31,7 @@ public class FutureTaskExample {
                 e.printStackTrace();
             }
         });
+
         otherThread.start();
 
         System.out.println(futureTask.get());

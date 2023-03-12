@@ -29,6 +29,7 @@ public class ForkJoinExample extends RecursiveTask<Integer> {
             int middle = first + (last - first) / 2;
             ForkJoinExample leftTask = new ForkJoinExample(first, middle);
             ForkJoinExample rightTask = new ForkJoinExample(middle + 1, last);
+
             leftTask.fork();
             rightTask.fork();
             result = leftTask.join() + rightTask.join();
@@ -39,6 +40,7 @@ public class ForkJoinExample extends RecursiveTask<Integer> {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ForkJoinExample example = new ForkJoinExample(1, 10000);
         ForkJoinPool forkJoinPool = new ForkJoinPool();
+
         Future result = forkJoinPool.submit(example);
         System.out.println(result.get());
     }

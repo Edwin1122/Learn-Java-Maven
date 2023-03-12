@@ -3,8 +3,7 @@ package ThreadDemo.FutureTask;
 import java.util.concurrent.*;
 
 public class FutureTaskTest {
-    private final ConcurrentMap<Object, Future<String>> taskCache =
-        new ConcurrentHashMap<Object, Future<String>>();
+    private final ConcurrentMap<Object, Future<String>> taskCache = new ConcurrentHashMap<Object, Future<String>>();
 
     private String executionTask(final String taskName) throws ExecutionException, InterruptedException {
 
@@ -28,6 +27,7 @@ public class FutureTaskTest {
 
             } try {
                 return future.get();
+
             } catch (CancellationException e) {
                 taskCache.remove(taskName, future);
             }
