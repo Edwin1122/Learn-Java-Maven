@@ -33,7 +33,7 @@ public class WaitNotify {
                     try {
                         System.out.println(Thread.currentThread() + " flag is true. wait @ " + new SimpleDateFormat("HH:mm:ss").format(new Date()));
 
-                        //当前线程等待在这个对象锁上, 直到被通知, 并且释放锁给别的线程
+                        //当前线程等待在这个对象锁上, 直到被通知, 并且释放锁给别的线程去修改
                         lock.wait();
 
                     } catch (InterruptedException e) {
