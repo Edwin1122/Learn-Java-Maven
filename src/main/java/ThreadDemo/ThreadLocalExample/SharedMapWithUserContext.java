@@ -6,7 +6,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class SharedMapWithUserContext implements Runnable {
 
-    //define class-level shared map 'userContextPerUserId'
+    //define class-level(static) shared map 'userContextPerUserId'
     //which can be accessed by 'SharedMapWithUserContext.userContextPerUserId'
     final static Map<Integer, Context> userContextPerUserId = new ConcurrentHashMap<>();
 
