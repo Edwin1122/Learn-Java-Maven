@@ -1,4 +1,4 @@
-package ThreadDemo;
+package Other;
 
 import java.util.Date;
 

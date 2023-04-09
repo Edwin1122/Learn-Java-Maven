@@ -1,4 +1,4 @@
-package ThreadDemo;
+package Other;
 
 public class SimpleTimer {
     private static int count;
