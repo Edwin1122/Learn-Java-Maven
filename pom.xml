@@ -60,7 +60,7 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>5.8.10</version>
+            <version>5.8.15</version>
         </dependency>
         <!--jjwt lib-->
         <dependency>
@@ -84,6 +84,12 @@
             <artifactId>lombok</artifactId>
             <version>1.18.22</version>
             <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>31.1-jre</version>
         </dependency>
 
     </dependencies>
